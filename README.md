@@ -24,6 +24,16 @@ KSPhotoViewer is a fast, lightweight, and powerful photo viewer. It allows you t
 
 ---
 
+## ⬇️ Download / ดาวน์โหลด
+
+**[EN]** Get the latest stable release (`.dmg`) from our **Releases** page:
+* 🔗 [Download KSPhotoViewer v1.0](https://github.com/ksplayfort/ksPhotoViewer/releases/tag/v1.0)
+
+**[TH]** ดาวน์โหลดตัวติดตั้งเวอร์ชันเสถียรล่าสุด (`.dmg`) ได้จากหน้า **Releases**:
+* 🔗 [ดาวน์โหลด KSPhotoViewer v1.0](https://github.com/ksplayfort/ksPhotoViewer/releases/tag/v1.0)
+
+---
+
 ## 🛠 App Installation & Setup / การอนุญาตใช้งานแอปพลิเคชัน
 
 As an app outside the Mac App Store, please follow one of the methods below to allow macOS to run it.

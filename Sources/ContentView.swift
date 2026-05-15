@@ -85,6 +85,10 @@ struct ContentView: View {
     // --- File URL ---
     @State private var currentFileURL: URL? = nil
     
+    // --- Delete State ---
+    @State private var fileToDelete: ImageFile? = nil
+    @State private var showDeleteAlert: Bool = false
+    
     // --- Settings ---
     @State private var enableAnimation: Bool = true
     
@@ -177,9 +181,27 @@ struct ContentView: View {
                                 }
                             }
                             .padding(.vertical, 4).tag(file.id)
+                            .contextMenu {
+                                // ซ่อนเมนูลบถ้าเป็นไฟล์ใน Zip
+                                if file.zipEntryName == nil {
+                                    Button(role: .destructive) {
+                                        promptDelete(file: file)
+                                    } label: {
+                                        Label("Move to Trash", systemImage: "trash")
+                                    }
+                                }
+                            }
                         }
                     }
                     .listStyle(.sidebar)
+                    .onDeleteCommand {
+                        // รองรับการกดปุ่ม Delete (Backspace) หรือ Delete บนคีย์บอร์ด
+                        if let selectedID = selectedFileID,
+                           let file = folderFiles.first(where: { $0.id == selectedID }),
+                           file.zipEntryName == nil { // ป้องกันการลบไฟล์ใน Zip
+                            promptDelete(file: file)
+                        }
+                    }
                     .onChange(of: selectedFileID) { newID in
                         if let id = newID, let file = folderFiles.first(where: { $0.id == id }) {
                             // สั่งโหลดรูป (รองรับทั้งไฟล์ปกติและไฟล์ใน Zip)
@@ -254,6 +276,14 @@ struct ContentView: View {
                     }.frame(width: 260).background(.ultraThinMaterial).transition(.move(edge: .trailing))
                 }
             }
+        }
+        .alert("Move to Trash", isPresented: $showDeleteAlert, presenting: fileToDelete) { file in
+            Button("Cancel", role: .cancel) { }
+            Button("Move to Trash", role: .destructive) {
+                moveToTrash(file: file)
+            }
+        } message: { file in
+            Text("Are you sure you want to move '\(file.name)' to the Trash?")
         }
         .toolbar {
             ToolbarItem(placement: .navigation) {
@@ -518,6 +548,48 @@ struct ContentView: View {
                 }
                 self.currentMetadata = PhotoMetadata(filename: url.lastPathComponent, dimensions: "\(Int(image.size.width)) x \(Int(image.size.height))", size: formattedSize, iso: isoVal, aperture: apertureVal, camera: camModel)
             }
+        }
+    }
+    
+    // MARK: - 🗑️ Delete Logic
+    func promptDelete(file: ImageFile) {
+        fileToDelete = file
+        showDeleteAlert = true
+    }
+    
+    func moveToTrash(file: ImageFile) {
+        do {
+            var resultingURL: NSURL?
+            try FileManager.default.trashItem(at: file.url, resultingItemURL: &resultingURL)
+            
+            // นำไฟล์ออกจาก List
+            if let index = folderFiles.firstIndex(where: { $0.id == file.id }) {
+                folderFiles.remove(at: index)
+                
+                // อัปเดตการเลือก (เลื่อนไปไฟล์ถัดไป หรือเคลียร์หน้าจอถ้าหมดแล้ว)
+                if folderFiles.isEmpty {
+                    selectedFileID = nil
+                    currentImage = nil
+                    avPlayer?.pause()
+                    avPlayer = nil
+                    isMediaFile = false
+                    currentFileURL = nil
+                    currentMetadata = PhotoMetadata()
+                } else {
+                    let newIndex = min(index, folderFiles.count - 1)
+                    selectedFileID = folderFiles[newIndex].id
+                }
+            }
+        } catch {
+            print("Error moving to trash: \(error.localizedDescription)")
+            
+            // แจ้งเตือนผู้ใช้หากลบไม่สำเร็จ (เช่น ติด Permission)
+            let alert = NSAlert()
+            alert.messageText = "Cannot Move to Trash"
+            alert.informativeText = error.localizedDescription
+            alert.alertStyle = .warning
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
         }
     }
     

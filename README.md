@@ -7,7 +7,11 @@ The Photo Viewer You've Been Waiting For Fast, lightweight, and powerful. View, 
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-Native-orange.svg)
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
+**[EN]** 
+
 KSPhotoViewer is a fast, lightweight, and powerful photo viewer. It allows you to view, crop, check metadata, and play videos (MP4, MOV). The architecture and codebase of this application were crafted entirely by AI and built 100% with Swift.
+
+**[TH]** 
 
 โปรแกรมดูรูปที่เร็ว แรง เบาเครื่อง พร้อมฟีเจอร์ตัดต่อพื้นฐาน และรองรับการเล่นไฟล์วิดีโอ (MP4, MOV) โค้ดทั้งหมดถูกสร้างโครงสร้างและเขียนด้วยเทคโนโลยี AI อันชาญฉลาด และพัฒนาด้วย Swift แท้ 100%
 
@@ -15,62 +19,107 @@ KSPhotoViewer is a fast, lightweight, and powerful photo viewer. It allows you t
 
 ## ✨ Features / คุณสมบัติเด่น
 
-* **🚀 Fast / เร็วและลื่นไหล**: Built with SwiftUI for native performance and minimal resource usage. (เขียนด้วย SwiftUI ทั้งระบบ ทำให้เปิดรูปไว กินทรัพยากรน้อยมาก)
-* **✂️ Crop & Edit / Crop & Edit**: Easily crop, rotate, and adjust lighting in a single window. (ตัดส่วนภาพ หมุนภาพ ปรับแสงสี ได้ง่ายๆ ในหน้าต่างเดียว)
-* **ℹ️ Metadata / ดู Metadata ลึก**: View detailed EXIF data like camera model, ISO, aperture, and more. (แสดงข้อมูล EXIF เช่น รุ่นกล้อง, ISO, รูรับแสง อย่างละเอียด)
-* **📂 Easy Management / จัดการไฟล์ง่าย**: Open folders, overwrite files, or save copies seamlessly. (เปิดทั้งโฟลเดอร์ เซฟทับไฟล์เดิม หรือเซฟเป็นไฟล์ใหม่ได้ทันที)
-* **🎬 Video Support / เล่นไฟล์วิดีโอ**: Seamlessly play popular video formats like MP4 and MOV directly in the app. (รองรับการเล่นไฟล์วิดีโอยอดนิยมอย่าง MP4 และ MOV ได้ในตัวอย่างลื่นไหล)
-* **🤖 AI-Generated Code / โค้ดสร้างโดย AI**: The codebase was crafted entirely by AI. (โปรแกรมนี้ถูกสร้างโครงสร้างและเขียนโค้ดด้วยเทคโนโลยี AI อันชาญฉลาด)
+**[EN]** 
+
+* **🚀 Fast**: Built with SwiftUI for native performance and minimal resource usage.
+* **✂️ Crop & Edit / Crop & Edit**: Easily crop, rotate, and adjust lighting in a single window.
+* **ℹ️ Metadata**: View detailed EXIF data like camera model, ISO, aperture, and more.
+* **📂 Easy Management**: Open folders, overwrite files, or save copies seamlessly.
+* **🎬 Video Support**: Seamlessly play popular video formats like MP4 and MOV directly in the app.
+* **🤖 AI-Generated Code**: The codebase was crafted entirely by AI.
+
+**[TH]** 
+
+* **🚀 เร็วและลื่นไหล**: เขียนด้วย SwiftUI ทั้งระบบ ทำให้เปิดรูปไว กินทรัพยากรน้อยมาก
+* **✂️ Crop & Edit**: ตัดส่วนภาพ หมุนภาพ ปรับแสงสี ได้ง่ายๆ ในหน้าต่างเดียว)
+* **ℹ️ ดู Metadata ลึก**: แสดงข้อมูล EXIF เช่น รุ่นกล้อง, ISO, รูรับแสง อย่างละเอียด
+* **📂 จัดการไฟล์ง่าย**: เปิดทั้งโฟลเดอร์ เซฟทับไฟล์เดิม หรือเซฟเป็นไฟล์ใหม่ได้ทันที
+* **🎬 เล่นไฟล์วิดีโอ**: รองรับการเล่นไฟล์วิดีโอยอดนิยมอย่าง MP4 และ MOV ได้ในตัวอย่างลื่นไหล
+* **🤖 โค้ดสร้างโดย AI**: โปรแกรมนี้ถูกสร้างโครงสร้างและเขียนโค้ดด้วยเทคโนโลยี AI อันชาญฉลาด
 
 ---
 
 ## ⬇️ Download / ดาวน์โหลด
 
-**[EN]** Get the latest stable release (`.dmg`) from our **Releases** page:
+**[EN]** 
+
+Get the latest stable release (`.dmg`) from our **Releases** page:
 * 🔗 [Download KSPhotoViewer v1.0](https://github.com/ksplayfort/ksPhotoViewer/releases/tag/v1.0)
 
-**[TH]** ดาวน์โหลดตัวติดตั้งเวอร์ชันเสถียรล่าสุด (`.dmg`) ได้จากหน้า **Releases**:
+**[TH]** 
+
+ดาวน์โหลดตัวติดตั้งเวอร์ชันเสถียรล่าสุด (`.dmg`) ได้จากหน้า **Releases**:
 * 🔗 [ดาวน์โหลด KSPhotoViewer v1.0](https://github.com/ksplayfort/ksPhotoViewer/releases/tag/v1.0)
 
 ---
 
 ## 🛠 App Installation & Setup / การอนุญาตใช้งานแอปพลิเคชัน
 
+**[EN]** 
+
 As an app outside the Mac App Store, please follow one of the methods below to allow macOS to run it.
-*(เนื่องจากแอปนี้เป็นแอปนอก App Store กรุณาทำตามวิธีใดวิธีหนึ่งด้านล่างเพื่ออนุญาตให้ macOS รันแอปพลิเคชันได้)*
 
-### Method 1: System Settings (Recommended) / วิธีที่ 1: ตั้งค่าผ่าน System Settings (แนะนำ)
-1.  Copy the app into your **Applications** folder. (คัดลอกไฟล์แอปไปไว้ในโฟลเดอร์ **Applications**)
-2.  Try opening the app. If a warning appears saying it cannot be opened, click **Cancel**. (ลองดับเบิ้ลคลิกเปิดแอปครั้งแรก หากมีหน้าต่างเตือนว่าเปิดไม่ได้ ให้คลิกปุ่ม **Cancel (ยกเลิก)**)
-3.  Go to the Apple menu () > **System Settings** > **Privacy & Security**. (ไปที่เมนูแอปเปิ้ล () เลือก **System Settings** > **Privacy & Security**)
-4.  Scroll down to the Security section. You will see a message about KSPhotoViewer being blocked. Click **Open Anyway**. (เลื่อนลงมาส่วนของ Security จะพบข้อความแจ้งว่า KSPhotoViewer ถูกบล็อก ให้คลิกปุ่ม **Open Anyway (เปิดต่อไป)**)
-5.  **Allow Notifications:** To get alerts when saving images, go to **System Settings** > **Notifications**, find KSPhotoViewer, and toggle on **Allow Notifications**. (**การอนุญาตแจ้งเตือน:** หากต้องการให้แอปแจ้งเตือนเมื่อบันทึกรูปภาพสำเร็จ ไปที่ **System Settings** > **Notifications** ค้นหา KSPhotoViewer และเปิด **Allow Notifications**)
+### Method 1: System Settings (Recommended)
+1.  Copy the app into your **Applications** folder.
+2.  Try opening the app. If a warning appears saying it cannot be opened, click **Cancel**.
+3.  Go to the Apple menu () > **System Settings** > **Privacy & Security**.
+4.  Scroll down to the Security section. You will see a message about KSPhotoViewer being blocked. Click **Open Anyway**.
+5.  **Allow Notifications:** To get alerts when saving images, go to **System Settings** > **Notifications**, find KSPhotoViewer, and toggle on **Allow Notifications**.
 
-### Method 2: Using Terminal (Fast) / วิธีที่ 2: ตั้งค่าผ่าน Terminal (รวดเร็ว)
-1.  Ensure you have copied the app to the **Applications** folder. (ตรวจสอบให้แน่ใจว่าได้คัดลอกแอปไปไว้ในโฟลเดอร์ **Applications** แล้ว)
-2.  Open the **Terminal** app (search via Spotlight: cmd + spacebar). (เปิดโปรแกรม **Terminal** ค้นหาผ่าน Spotlight: cmd + spacebar)
-3.  Copy and paste the command below, then press Enter: (คัดลอกคำสั่งด้านล่างนี้ไปวางใน Terminal แล้วกด Enter:)
+### Method 2: Using Terminal (Fast)
+1.  Ensure you have copied the app to the **Applications** folder.
+2.  Open the **Terminal** app (search via Spotlight: cmd + spacebar).
+3.  Copy and paste the command below, then press Enter:
     ```bash
     xattr -cr /Applications/KSPhotoViewer.app
     ```
 > *Note: This command removes the quarantine attribute from the app, allowing macOS to bypass the security block and open it normally.*
-> *(คำสั่งนี้ใช้เพื่อลบแอตทริบิวต์ Quarantine ของไฟล์ ช่วยให้ macOS ข้ามการตรวจสอบและสามารถเปิดแอปได้ตามปกติ)*
+
+**[TH]** 
+
+เนื่องจากแอปนี้เป็นแอปนอก App Store กรุณาทำตามวิธีใดวิธีหนึ่งด้านล่างเพื่ออนุญาตให้ macOS รันแอปพลิเคชันได้
+
+### วิธีที่ 1: ตั้งค่าผ่าน System Settings (แนะนำ)
+1.  คัดลอกไฟล์แอปไปไว้ในโฟลเดอร์ **Applications**
+2.  ลองดับเบิ้ลคลิกเปิดแอปครั้งแรก หากมีหน้าต่างเตือนว่าเปิดไม่ได้ ให้คลิกปุ่ม **Cancel (ยกเลิก)**
+3.  ไปที่เมนูแอปเปิ้ล () เลือก **System Settings** > **Privacy & Security**
+4.  เลื่อนลงมาส่วนของ Security จะพบข้อความแจ้งว่า KSPhotoViewer ถูกบล็อก ให้คลิกปุ่ม **Open Anyway (เปิดต่อไป)**
+5.  **การอนุญาตแจ้งเตือน:** หากต้องการให้แอปแจ้งเตือนเมื่อบันทึกรูปภาพสำเร็จ ไปที่ **System Settings** > **Notifications** ค้นหา KSPhotoViewer และเปิด **Allow Notifications**
+
+### วิธีที่ 2: ตั้งค่าผ่าน Terminal (รวดเร็ว)
+1.  ตรวจสอบให้แน่ใจว่าได้คัดลอกแอปไปไว้ในโฟลเดอร์ **Applications** แล้ว
+2.  เปิดโปรแกรม **Terminal** ค้นหาผ่าน Spotlight: cmd + spacebar
+3.  คัดลอกคำสั่งด้านล่างนี้ไปวางใน Terminal แล้วกด Enter:
+    ```bash
+    xattr -cr /Applications/KSPhotoViewer.app
+    ```
+> *คำสั่งนี้ใช้เพื่อลบแอตทริบิวต์ Quarantine ของไฟล์ ช่วยให้ macOS ข้ามการตรวจสอบและสามารถเปิดแอปได้ตามปกติ*
 
 ---
 
 ## 👨‍💻 Developer / ผู้พัฒนา
 
+**[EN]** 
+
 **Developed by KS**
 Independent developer utilizing the power of AI to create useful tools for macOS.
-*(นักพัฒนาแอปพลิเคชันอิสระ ผู้ประยุกต์ใช้พลังของ AI ในการสร้างเครื่องมือที่มีประโยชน์บน macOS)*
+
+**[TH]** 
+
+**พัฒนาโดย KS**
+นักพัฒนาแอปพลิเคชันอิสระ ผู้ประยุกต์ใช้พลังของ AI ในการสร้างเครื่องมือที่มีประโยชน์บน macOS
 
 ---
 
 ## ⚠️ Disclaimer / ข้อสงวนสิทธิ์ในการรับผิดชอบ
 
-**[EN]** This software is provided "as is", without warranty of any kind, express or implied. The developer makes no guarantees regarding the accuracy, reliability, or completeness of the software. In no event shall the developer be liable for any claim, damages, data loss, or other liability arising from the use of this software. You use this application entirely at your own risk.
+**[EN]** 
 
-**[TH]** ซอฟต์แวร์นี้ถูกจัดเตรียมให้ "ตามสภาพ" (As is) โดยไม่มีการรับประกันใดๆ ทั้งสิ้น ไม่ว่าโดยชัดแจ้งหรือโดยนัย ผู้พัฒนาไม่รับรองความถูกต้อง ความน่าเชื่อถือ หรือความสมบูรณ์ของซอฟต์แวร์นี้ ผู้พัฒนาจะไม่รับผิดชอบต่อความเสียหายใดๆ การสูญหายของข้อมูล หรือปัญหาใดๆ ที่เกิดขึ้นจากการใช้งานแอปพลิเคชันนี้ ผู้ใช้ต้องยอมรับความเสี่ยงในการใช้งานด้วยตนเองทั้งหมด
+This software is provided "as is", without warranty of any kind, express or implied. The developer makes no guarantees regarding the accuracy, reliability, or completeness of the software. In no event shall the developer be liable for any claim, damages, data loss, or other liability arising from the use of this software. You use this application entirely at your own risk.
+
+**[TH]** 
+
+ซอฟต์แวร์นี้ถูกจัดเตรียมให้ "ตามสภาพ" (As is) โดยไม่มีการรับประกันใดๆ ทั้งสิ้น ไม่ว่าโดยชัดแจ้งหรือโดยนัย ผู้พัฒนาไม่รับรองความถูกต้อง ความน่าเชื่อถือ หรือความสมบูรณ์ของซอฟต์แวร์นี้ ผู้พัฒนาจะไม่รับผิดชอบต่อความเสียหายใดๆ การสูญหายของข้อมูล หรือปัญหาใดๆ ที่เกิดขึ้นจากการใช้งานแอปพลิเคชันนี้ ผู้ใช้ต้องยอมรับความเสี่ยงในการใช้งานด้วยตนเองทั้งหมด
 
 ---
 
